@@ -1,2 +1,9 @@
 #!/bin/bash
-echo input | rev
+x="welcome"
+len=`echo ${#x}`
+while [ $len -ne 0 ]
+do
+        y=$y`echo $x | cut -c $len`
+        ((len--))
+done
+echo $y
