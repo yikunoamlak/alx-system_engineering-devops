@@ -1,2 +1,2 @@
 #!/bin/bash
-echo <(list) | rev
+read -a <variable_name> | rev
